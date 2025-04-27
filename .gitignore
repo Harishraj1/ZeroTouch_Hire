@@ -1,0 +1,23 @@
+# Django
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# Static and media files (if not needed in repo)
+staticfiles/
+media/
+
+# IDE files
+.idea/
+*.sublime-project
+*.sublime-workspace

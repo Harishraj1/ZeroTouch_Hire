@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.file-input {
+  background: linear-gradient(to bottom right, #c6bfce, #adcbff);
+  border: 0.5px solid #2575fc;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.file-input:hover {
+  background-color: #f1f1f1;
+  border-color: #1a5bbf;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.status-text .spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid green;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
